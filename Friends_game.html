@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Memory Game</title>
+    <link rel="stylesheet" href="friends_game.css">
+</head>
+
+<body>
+
+    <div class="winningpic" id="showmedance">
+        <img id="joeychandlerdance" src="_image/we_won.gif" alt="">
+        <h1 class="winningword">You Win!</h1>
+    </div>
+    <div class="leftpart">
+        <div id="starting">
+            <h1>Here's how it goes</h1>
+            <h2>If you find to cards with the same character on them, you've made a match.</h2>
+            <h2>There's no time limit, no way to fail. Just enjoy!</h2>
+            <a href="Homepage.html#topofthepage"><button>Back to Home Page</button></a>
+            <button onclick="refresh()">Start Again</button>
+        </div>
+
+    </div>
+    <section class="gameframe">
+        <!-- data-自己取名 是資料建立的一種方法 可用js 變數.dataset.自己取名 取得資料 -->
+        <div class="game_card" data-cardname="rachel" onclick="flipcard(event)">
+            <img class='front_face' id="rachel1" src="_image/matchgame/rachel-now.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="rachel" onclick="flipcard(event)">
+            <img class='front_face' id="rachel2" src="_image/matchgame/rachel-then.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="monica" onclick="flipcard(event)">
+            <img class='front_face' id="monica1" src="_image/matchgame/Monica-now.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="monica" onclick="flipcard(event)">
+            <img class='front_face' id="monica2" src="_image/matchgame/Monica-then.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="pheobe" onclick="flipcard(event)">
+            <img class='front_face' id="pheobe1" src="_image/matchgame/pheobe-now.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="pheobe" onclick="flipcard(event)">
+            <img class='front_face' id="pheobe2" src="_image/matchgame/pheobe-then.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="chandler" onclick="flipcard(event)">
+            <img class='front_face' id="chandler1" src="_image/matchgame/chandler-now.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="chandler" onclick="flipcard(event)">
+            <img class='front_face' id="chandler2" src="_image/matchgame/chandler-then.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="joey" onclick="flipcard(event)">
+            <img class='front_face' id="joey1" src="_image/matchgame/joey-now.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="joey" onclick="flipcard(event)">
+            <img class='front_face' id="joey2" src="_image/matchgame/joey-then.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="ross" onclick="flipcard(event)">
+            <img class='front_face' id="ross1" src="_image/matchgame/ross-now.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="ross" onclick="flipcard(event)">
+            <img class='front_face' id="ross2" src="_image/matchgame/ross-then.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+    </section>
+
+    <script src="friendsgame.js"></script>
+</body>
+
+</html>

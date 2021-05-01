@@ -1,0 +1,135 @@
+body {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    background-color: lightyellow;
+}
+
+.characpage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+nav#topnav {
+    background-color: rgb(138, 43, 226, 0.9);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 16;
+}
+
+#navpart {
+    background-color: rgb(191, 165, 216);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+}
+
+.navbar {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 22px;
+}
+
+.friendslogo {
+    width: 150px;
+    height: auto;
+}
+
+#pagelist {
+    background-color: lightyellow;
+    flex: 1;
+    padding-left: 250px;
+    padding-right: 5%;
+}
+
+#pagelist>div {
+    padding: 80px;
+}
+
+img#rachelself {
+    width: 55%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+div#family {
+    position: relative;
+}
+
+div.familyintro {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    bottom: 30%;
+    left: 33%;
+    visibility: hidden;
+    padding: 10px;
+}
+
+div#mom {
+    background-color: lightpink;
+    z-index: 3;
+}
+
+div#dad {
+    background-color: lightsteelblue;
+    z-index: 3;
+}
+
+div#sibling1 {
+    background-color: lightgreen;
+    z-index: 3;
+}
+
+div#sibling2 {
+    background-color: rgb(136, 206, 199);
+    z-index: 3;
+}
+
+.familymember {
+    margin: 0;
+    padding: 0;
+    width: 18%;
+    border-radius: 50%;
+}
+
+.selfincenter {
+    position: relative;
+    width: 20vw;
+    height: 35vh;
+}
+
+.selfpic {
+    width: 95%;
+    left: 100%;
+    bottom: -10%;
+    position: absolute;
+}
+
+.cardcase {
+    margin-top: 10%;
+    width: 100%;
+    height: 310px;
+    overflow: visible;
+    display: flex;
+    flex-wrap: nowrap;
+    /* 縮小螢幕時才不會跨行 */
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    overflow: hidden;
+    border: 3px solid gray;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px black;
+}

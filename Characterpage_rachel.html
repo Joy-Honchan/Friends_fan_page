@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap bundle include popper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="characterpage.css">
+    <title>Character Introduction Rachel</title>
+</head>
+
+
+<body data-spy="scroll" data-target="#pagelist">
+    <div class="characpage">
+        <nav id="topnav">
+            <ul class="m-0 navbar navbar-expand-lg nav-pills justify-content-between">
+                <li>
+                    <a class="nav-link" href="Homepage.html#topofthepage">
+                        <img class="friendslogo" src="_image/friends-logo-png-white.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link pl-5" href="Homepage.html#storysummary">Story</a>
+                </li>
+                <li>
+                    <a class="nav-link pl-5" href="Homepage.html#season">Season</a>
+                </li>
+                <li>
+                    <a class="nav-link pl-5" href="Homepage.html#characterintro">Characters</a>
+                </li>
+                <li>
+                    <a class="nav-link pl-5" href="Homepage.html#iconiclines">Quotes</a>
+                </li>
+                <il><a class="nav-link pl-5" href="Friends_game.html">Game</a></il>
+            </ul>
+        </nav>
+
+        <div id="navpart" class="h-100 p-5">
+            <!-- list -->
+            <ul class="h-100 d-flex navbar flex-column nav-pills align-content-between">
+                <li></li>
+                <li>
+                    <a class="nav-link" href="#profile">Profile</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#family">Family</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#romance">Romance</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="pagelist">
+            <div id="profile" class="d-flex">
+                <img id="rachelself" src="_image/aniston-rachel-png.png" alt="">
+                <div id="introduction" class="mt-3">
+                    <h1>Rachel Green</h1>
+                    <br>
+                    <h4>Job: </h4>
+                    <h4>Cafe waitress </h4>
+                    <h4> Personal shopper of Ralph Lauren </h4>
+                    <br>
+                    <h4>Personality: </h4>
+                    <h4>At first, Rachel seems to be the most immature one of the group since she was always Daddy’s little girl. After these years she proof to herself and others that she can be independant and mature, too. </h4>
+                </div>
+            </div>
+            <div id="family">
+                <div class="familyintro" id="mom">
+                    <h3>Sandra Green</h3>
+                    <p>Rachel's mother. Marrying to Leonard, she is not the happiest woman in the world. Once she found out her daughter started a new life in New York, she couldn't help but to pursuit her dream, too.
+                    </p>
+                </div>
+                <div class="familyintro" id="dad">
+                    <h3>Leonard Green</h3>
+                    <p>Rachel's father. As a doctor and a strict father, Dr.Green is loved and frightened by his daughter(mostly only Rachel). Looks down on Ross since he's not a real "doctor."</p>
+                </div>
+                <div class="familyintro" id="sibling1">
+                    <h3>Amy Green</h3>
+                    <p>One of Rachel's younger sister. Has all the weird ideas, once even got baby Emma a ear-piercing! Haven't decided what she wants to do in the future. But her biggest dream is marrying a rich guy.
+                    </p>
+                </div>
+                <div class="familyintro" id="sibling2">
+                    <h3>Jill Green</h3>
+                    <p>Another Rachel's younger sister. Nothing makes here happy but making Rachel angry. She even pretend to be interested in Ross just to piss Rachel off. Comparing to Amy, she seems to be ambitious.
+                    </p>
+                </div>
+                <div class="familyissue">
+                    <div class="parents d-flex justify-content-between">
+                        <img class="familymember" src="_image/family_sandra_green.png" alt="" onmouseover="showfamilyinfo('mom')" onmouseout="hidefamilyinfo('mom')">
+                        <img class="familymember" src="_image/family_leonard_green.png" alt="" onmouseover="showfamilyinfo('dad')" onmouseout="hidefamilyinfo('dad')">
+                    </div>
+                    <div class="selfincenter">
+                        <img class="selfpic" src="_image/family_rachel_green.png" alt="">
+                    </div>
+                    <div class="siblings d-flex justify-content-between">
+                        <img class="familymember" src="_image/family_amy_green.png" alt="" onmouseover="showfamilyinfo('sibling1')" onmouseout="hidefamilyinfo('sibling1')">
+                        <img class="familymember" src="_image/family_jill_green.png" alt="" onmouseover="showfamilyinfo('sibling2')" onmouseout="hidefamilyinfo('sibling2')">
+                    </div>
+                </div>
+
+            </div>
+            <div id="romance">
+                <div class=" cardcase justify-content-between">
+                    <div class="card ml-0 ">
+                        <div class="imgbox ">
+                            <img class="cardimg " src="_image/rachel_joshua_romance.jpg" alt=" ">
+                        </div>
+                        <div class="contentbox mt-3 ">
+                            <h3>Joshua</h3>
+                            <p>Rachel's client when she was a personal shopper. Charming and handsome but afraid to make commitment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgbox ">
+                            <img class="cardimg " src="_image/rachel_paul_romance.jpg" alt=" ">
+                        </div>
+                        <div class="contentbox mt-3 ">
+                            <h4>Paul</h4>
+                            <p>Ross's student's father. Man's man on the outside, crybaby on the in side.</p>
+                        </div>
+                    </div>
+                    <div class="card mr-0 ">
+                        <div class="imgbox ">
+                            <img class="cardimg " src="_image/rachel_ross_romance.jpg" alt=" ">
+                        </div>
+                        <div class="contentbox mt-3 ">
+                            <h3>Ross</h3>
+                            <p>Being in love with Rachel since high school, till his 20s finally asked her out. he should print 'we were on a break' on all his shirts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="characterpage.js"></script>
+
+</body>
+
+
+</html>
